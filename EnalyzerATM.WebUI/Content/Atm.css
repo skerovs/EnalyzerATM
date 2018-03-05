@@ -1,0 +1,218 @@
+﻿body {
+    background-color: #2bbed3;
+    display: flex;
+}
+
+/* Home page styles */
+.atm-title--container {
+    padding-top: 30vh;
+    text-align: center;
+}
+
+.atm-title--text {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+
+    opacity: 0;
+    -webkit-transition: opacity 1s ease-in;
+    -moz-transition: opacity 1s ease-in;
+    -ms-transition: opacity 1s ease-in;
+    -o-transition: opacity 1s ease-in;
+    transition: opacity 1s ease-in;
+}
+
+.atm-title--text__fade {
+    opacity: 0;
+}
+
+.atm-title--text__load {
+    opacity: 1;
+}
+
+
+/* Kepad page styles */
+.keypad-content {
+    width: 400px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.keypad {
+    margin-top: 20px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+}
+
+.keypad-row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.keypad-row__last {
+    flex: none;
+}
+
+.keypad-btn {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    padding: 10px;
+    margin: 10px;
+    flex-grow: 1;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    color: white;
+    text-align: center;
+}
+
+.keypad-btn__key {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 25px;
+    font-weight: 700;
+}
+.keypad-btn__key-last {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 25px;
+    flex-grow: 0;
+    font-weight: 700;
+}
+
+.keypad-btn__submit {
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 60px;
+}
+
+.keypad-btn--container {
+    margin-left: 20px;
+    color: white;
+    text-align: center;
+}
+
+.keypad-btn--container__submit {
+    height: 50px;
+    width: 170px;
+    border-radius: 40px;
+}
+
+.keypad-btn:hover {
+    background-color: white;
+    color: #2bbed3;
+}
+
+
+
+/* Deposit page styles */
+
+
+.row-money {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 50vw;
+    display: flex;
+    flex-flow: row;
+}
+
+.money-col {
+    display: flex;
+    flex-wrap: wrap;
+    width: 310px;
+}
+
+.money-col__notes {
+}
+
+.money-col__coins {
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+.money-box {
+    margin-left: 20px;
+    width: 310px;
+    height: 90px;
+    border: solid;
+    border-width: 1px;
+    border-color: white;
+    display: flex;
+}
+
+.money-box--text{
+    padding-top: 20px;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font-size: 30px !important;
+}
+
+.money-box--symbol{
+    background-color: white;
+    width: 90px;
+    height: 45px;
+    margin: 20px;
+}
+
+.money-box--symbol-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #2bbed3;
+    margin: 7px;
+    margin-left: 30px;
+}
+
+
+.money-box__coins {
+}
+
+
+/* Shared classes*/
+.text-container {
+    text-align: center;
+    padding-top: 30px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.text__thank-you-message {
+    width: 400px;
+    max-width: 50%;
+}
+
+.display {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-amount {
+    font-family: "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    max-width: 50%;
+}
+
