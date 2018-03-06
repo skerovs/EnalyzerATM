@@ -79,6 +79,15 @@ namespace EnalyzerATM.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Make new transaction.
+        /// </summary>
+        public static string MakeNewTransaction {
+            get {
+                return ResourceManager.GetString("MakeNewTransaction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to  Select amount.
         /// </summary>
         public static string SelectAmount {

@@ -123,6 +123,9 @@
   <data name="Enalyzer" xml:space="preserve">
     <value>Enalyzer</value>
   </data>
+  <data name="MakeNewTransaction" xml:space="preserve">
+    <value>Make new transaction</value>
+  </data>
   <data name="SelectAmount" xml:space="preserve">
     <value> Select amount</value>
   </data>

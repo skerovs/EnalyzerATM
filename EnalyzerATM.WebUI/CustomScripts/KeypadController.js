@@ -1,5 +1,4 @@
-﻿var $scope = {};
-(function () {
+﻿(function () {
     var numberOfButtons = 10;
     var buttonIDs = [];
     var depositAmount = '';
@@ -13,6 +12,8 @@
             var keyValue = buttonID.replace("key", "");
             $('#' + buttonID).click({ param: keyValue }, pressKey);
         });
+
+        $('#submit').click(submitDepositAmount);
     };
 
     var updateDisplay = function (depositAmount) {
@@ -35,7 +36,14 @@
         } else {
             showErrorModal();
         }
+    };
 
+    var submitDepositAmount = function() {
+        var amount = $('#amount').text();
+        sessionStorage.deposit = amount;
+
+        var newURL = '/Home/Depositing';
+        window.location = newURL;
     };
 
     attachEvent(buttonIDs);

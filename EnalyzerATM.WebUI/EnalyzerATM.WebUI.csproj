@@ -167,7 +167,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\font.css" />
     <Content Include="CustomScripts\ATM.js" />
-    <Content Include="CustomScripts\EventDispatcher.js" />
+    <Content Include="CustomScripts\DepositingController.js" />
+    <Content Include="CustomScripts\KeypadController.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -218,8 +219,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="CustomScripts\Controllers\" />
-    <Folder Include="CustomScripts\Services\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

@@ -1,39 +1,23 @@
 ﻿
-<div class="text-container">
+<div class="basic-container container__text">
     <div class="text">
         @Resource.SelectAmount
     </div>
 </div>
-    
 <div class="display">
-    <div id ="display" class="display-amount" type="text">
-        <span> £ 555555</span>
+    <div id="display" class="display-amount" type="text">
+        <span id="amount" class="display-amount"></span>
     </div>
 </div>
-
 <div class="row-money">
-
-    <div class="money-col">
-        <div class="money-box">
-            <div class="money-box--symbol">
-                <div class="money-box--symbol-circle"></div>
-            </div>
-            <div class="text money-box--text">
-                500 x 1
-            </div>
-        </div>
-    </div>
-
-    <div class="money-col">
-
-    </div>
-
-    <div class="money-col">
-
-    </div>
+    <div id="note-col" class="money-col"></div>
+    <div id="coin-col" class="money-col"></div>
+    <div id="coin-col1" class="money-col"></div>
 </div>
-
-<div class="text-container">
+<div class="basic-container container__back-btn">
+    <div id="back" class="keypad-btn keypad-btn__back">@Resource.MakeNewTransaction</div>
+</div>
+<div class="basic-container container__text">
     <div class="text text__thank-you-message">
         @Resource.ThankYouForUsingUs
     </div>

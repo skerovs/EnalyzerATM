@@ -11,7 +11,8 @@ namespace EnalyzerATM.WebUI
 
             bundles.Add(new ScriptBundle("~/bundles/custom").Include(
                 "~/CustomScripts/atm.js",
-                "~/CustomScripts/EventDispatcher.js"));
+                "~/CustomScripts/KeypadController.js",
+                "~/CustomScripts/DepositingController.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));

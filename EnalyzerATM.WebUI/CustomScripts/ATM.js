@@ -1,14 +1,11 @@
 ﻿
 $(document).ready(function () {
-
-
     if (isHomePage()) {
         setTimeout(transitionToATM, 3000);
     }
 });
 
 var transitionToATM = function() {
-
     $('.atm-title--text').removeClass('atm-title--text__load');
     setTimeout(function() {
         window.location = 'Home/ChooseAmount';
@@ -25,10 +22,10 @@ var isHomePage = function() {
     }
 }
 
-
 var showErrorModal = function () {
     $('#error-modal').modal('show');
 };
+
 var hideErrorModal = function() {
     $('#error-modal').modal('hide');
 };
